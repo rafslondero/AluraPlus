@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+:root {
+    --branco-principal: #ffffff;
+    --cinza-secundario: #c0c0c0;
+    --botao-azul: #167bf7;
+    --cor-de-fundo: #00030c;
+    --fonte-principal: 'Inter';
+    --botao-azul-efeito: #4490ec;
+
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);  
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.principal{
+    /*background-image: url("/imgs/Background.png");*/
+    background-repeat: no-repeat;
+    align-items: center;
+    text-align: center;
+
+}
+
+.container_caixa {
+    width: 600px;
+}
+
+.container {
+    
+    display:flex;
+    flex-direction: row;
+}
+
+.container_botao{
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    text-decoration: none;
+    color: var(--branco-principal);
+    display: block;
+    margin-bottom: 1em;
+}
+
+.container_botao:hover{
+    background-color: var(--botao-azul-efeito);
+    transition: 0.4s;
+
+}
+
+.botao_secundario:hover {
+    background-color: var(--branco-principal);
+    color: var(--cor-de-fundo);
+    opacity: 0.8;
+    transition: 0.4s;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container_aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.container_titulo{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.container_imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container_caixa{
+    margin: 0 6em;
+}
+
+.secundario_imagem{
+    width: 80%;
+}
+
+.secundario_imagem:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+
+.secundario {
+    align-items: center;
+    margin: 80px;
+    padding: 70px;
+    
+}
+
+.descricao_titulo {
+    font-weight: bold;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao_texto {
+    color: var(--cinza-secundario);
+}
+
+.secundario_botao{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container_descricao {
+    padding: 2em;
+}
+.dispositivos{
+    text-align: center;
+}
+.titulo-dispostivos{
+    color: var(--branco-principal);
+    font-size: 48px;
+}
+
+.dispositivos-lista {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--branco-principal);
+    margin: 5em 0;
+}
+ 
+.rodape {
+    font-size: 16px;
+}
+.rodape_logo{
+    display: flex;
+    justify-content: center;
+}
+.rodape_logo img{
+    max-width: 100px;
+    padding: 10px;
+}
+
+.rodape_lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 10px;
+    
+}
+
+.lista_link a {
+    text-decoration: none; 
+    color: var(--branco-principal);
+    margin: 0 10px;
+    
+}
+
+
+.rodape_texto  {
+    text-align: center;
+    color: var(--cinza-secundario);
+    font-size: 14px;
+
+}
+
+.rodape_texto  {
+    margin: 0 20px;
+    padding: 10px;
+
+}
+
+.lista_link a:hover {
+    color: var(--botao-azul-efeito);
+   
+}
+
+.lista_link a:active { /*quando clicado*/
+    color: #167bf7;
+}
+
+.dispositivos-lista img:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .container {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%; 
+        align-items: center;  
+        height: 60vh;
+    }
+
+    .container_titulo {
+        width: 50%;
+        
+    }
+    .container_botao{
+        width: 50%;
+    }
+    .container_aviso {
+        width: 50%;
+    }
+    .container_imagem{
+        width: 50%;
+        justify-content: flex-start;
+        align-content: flex-start;
+        margin-right: 370px;
+    }
+
+    .secundario_imagem {
+        width: 35%;
+    }
+
+    .descricao_titulo {
+        margin-top: 70px;
+        width: 70%;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .descricao_texto{
+        width: 70%;
+        text-align: center;
+    }
+
+    .imagem2 {
+        margin-right: 300px;
+    }
+    
+    .secundario_botao{
+        margin-left: 15px;
+    }
+
+    .imgnotebook {
+        margin-top: 40px;
+    }
+    
+    .rodape{
+        width: 96%;
+    }
+
+}
+
+@media  screen and (min-width: 2560px) {
+    .principal{
+        display: grid;
+        align-items: flex-start;
+        height: 100vh;
+    }
+    .container_titulo {
+        width: 40%;
+        margin-top: 150px;
+    }
+
+    .container_caixa .imgcombo  {
+        margin-right: 650px;
+    }
+
+    .container_botao {
+        width: 40%;
+    }
+
+    .container_aviso {
+        width: 40%;
+    }
+
+    .rodape {
+        display: flex;
+ 
+        flex-direction: column;
+    }
+
+}
